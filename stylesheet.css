@@ -104,6 +104,7 @@ ul {
 
 h2,
 h3,
+h4,
 a {
 	color: #34495e;
 }
@@ -227,7 +228,16 @@ body{
 }
 
 .about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-bottom: 1px solid rgba(59, 205, 149, 0.753);
   border-top: 1px solid rgba(59, 205, 149, 0.753);
 }
+
+.aboutmepara{
+  margin-top: 0%;
+}
+
+ 
 

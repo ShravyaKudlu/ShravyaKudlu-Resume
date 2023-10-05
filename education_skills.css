@@ -1,0 +1,288 @@
+
+h1{
+ color: #34495e;
+}
+
+
+ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+
+h2,
+h3,
+h4,
+a {
+color: #34495e;
+}
+
+a {
+text-decoration: none;
+}
+
+
+
+
+.main-nav {
+margin-top: 5px;
+
+}
+a,
+.main-nav a {
+padding: 10px 15px;
+text-transform: uppercase;
+text-align: center;
+display: block;
+}
+
+.main-nav a {
+color: #34495e;
+font-size: .99em;
+}
+
+.main-nav a:hover {
+color: #718daa;
+transform: scale(1.1);
+}
+
+
+
+.header {
+padding-top: .5em;
+padding-bottom: .5em;
+border: 1px solid rgba(59, 205, 149, 0.753);
+background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+-webkit-box-shadow: 0px 0px 20px 0px rgb(59, 205, 149);
+-moz-box-shadow: 0px 0px 20px 0px rgb(59, 205, 149);
+box-shadow: 0px 0px 20px 0px rgb(59, 205, 149);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+justify-content: center;
+}
+
+
+
+
+
+@media (min-width: 769px) {
+.header,
+.main-nav {
+  display: flex;
+}
+.header {
+  flex-direction: column;
+  align-items: center;
+    .header{
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1150px;
+}
+}
+
+}
+
+@media (min-width: 1025px) {
+.header {
+  flex-direction: coloum;
+  justify-content: space-between;
+}
+
+}
+
+p{
+color: #718daa;
+}
+
+body{
+background-color: #F0F8FF;
+}
+
+
+.education{
+  text-align: center;
+  position: relative;
+  padding: 3%;
+  background-color: #F0F8FF;
+}
+  
+
+
+.graduate,
+.underGraduate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 2%;
+  border-bottom: 1px solid rgba(59, 205, 149, 0.753);
+}
+.graduate{
+  padding-top: 2%;
+  border-top: 1px solid rgba(59, 205, 149, 0.753);
+  border-bottom: 1px solid rgba(59, 205, 149, 0.753);
+} 
+
+.university-logo1 {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.university-logo2 {
+  width: 35px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.graduate h4,
+.underGraduate h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #34495e;
+}
+
+
+.date {
+  font-weight: normal;
+  color: #718daa;
+  font-size: 14px;
+}
+
+.graduate h5,
+.underGraduate h5 {
+  margin: 0;
+  color: rgba(59, 205, 149, 0.753);
+  font-size: 16px;
+}
+
+.educationheader {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+
+.card_container {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+}
+
+.card {
+  flex: 1;
+  height: 300px;
+  perspective: 1000px;
+  margin: 10px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+  background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+  color: #fff;
+}
+
+.card-back {
+  background-color: rgba(192,229,246,1);
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+.para_UG{
+  margin: 0%;
+  padding: 0%;
+  color: #718daa;
+}
+
+.checked {
+  color: rgb(91, 237, 215);
+}
+
+.skillset {
+  text-align: center;
+}
+
+.skillname {
+  font-weight: bold;
+}
+
+.skillname h5{
+  margin-bottom: 0%;
+  color: #34495e;
+}
+
+.allskills{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainh3{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 2%;
+  border-bottom: 1px solid rgba(59, 205, 149, 0.753);
+}
+
+.skills{
+  border-bottom: 1px solid rgba(59, 205, 149, 0.753);
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.social-icons a {
+  text-decoration: none; 
+  margin-right: 20px; 
+}
+
+
+.social-icons img {
+  width: 25px; 
+  height: 25px;  
+  transition: transform 0.2s; 
+}
+
+
+.social-icons img:hover {
+  transform: scale(1.7); 
+}
+
+
+
+
+
+
