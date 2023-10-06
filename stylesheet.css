@@ -21,6 +21,13 @@
     justify-content: center;
     align-items: center;
   }
+
+  @media (max-width: 768px) {
+    .container {
+      width: 150px; /* Adjust the size for smaller screens */
+      height: 150px; /* Adjust the size for smaller screens */
+    }
+  }
   
   .avatar {
     width: 250px;
