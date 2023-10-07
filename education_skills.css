@@ -220,7 +220,18 @@ background-color: #F0F8FF;
 }*/
 .card_scroll_container {
   width: 100%;
+  overflow-y: hidden;
   overflow-x: auto;
+}
+
+.card_scroll_container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.card_scroll_container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .card_container {
