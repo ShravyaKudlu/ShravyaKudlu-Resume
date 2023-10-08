@@ -1,18 +1,19 @@
 section {
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
-.article-style{
+.article-style {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90%;
     background-color: #ddf6fd;
     box-shadow: 0 2px 2px rgb(59, 205, 149);
+    padding-bottom: 1%;
 }
 
 #work-experience article {
@@ -24,7 +25,38 @@ align-items: center;
 }
 
 #work-experience ul {
-    list-style-type:none;
-    text-align: left;  
+    display: inline-block;
+    align-items: center;
+    list-style-type: square;
+    list-style-position: inside;
 }
 
+.card_scroll_container1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#work-experience ul li {
+    color: #718daa;
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+.nospace {
+    padding: 0%;
+    margin: 0%;
+    color: rgba(59, 205, 149, 0.753);
+}
+
+.nospace1 {
+    margin-top: 0%;
+    color: rgba(59, 205, 149, 0.753);
+}
+
+.colorclass {
+    font-weight: 600;
+    color: rgba(59, 205, 149, 0.753);
+}
